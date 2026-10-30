@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#242f40">
+  <title>Create account | YourBrand</title>
+  <link rel="stylesheet" href="global.css">
+</head>
+<body>
+  <!-- PAGE 02: CREATE ACCOUNT -->
+  <main class="auth-page">
+    <div class="auth-shell">
+      <p class="page-label">A fresh start, all in one place</p>
+      <a class="auth-brand" href="01-get-started.html" aria-label="YourBrand sign in">Your<span>Brand</span></a>
+      <section class="auth-card" aria-labelledby="register-title">
+        <h1 id="register-title">Create your account</h1>
+        <p class="auth-intro">A few details and your workspace will be ready.</p>
+        <p class="auth-message" id="authMessage" role="status" aria-live="polite"></p>
+        <form class="auth-form" id="registerForm" novalidate>
+          <div class="form-field">
+            <label for="register-name">Full name</label>
+            <input id="register-name" name="name" type="text" placeholder="Your full name" autocomplete="name" required minlength="2">
+          </div>
+          <div class="form-field">
+            <label for="register-email">Email address</label>
+            <input id="register-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="register-username">Username</label>
+            <input id="register-username" name="username" type="text" placeholder="Choose a username" autocomplete="username" required minlength="3">
+          </div>
+          <div class="form-field">
+            <label for="register-password">Password</label>
+            <input id="register-password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" required minlength="8">
+            <small class="auth-password-hint">Use at least 8 characters.</small>
+          </div>
+          <div class="form-field">
+            <label for="register-confirm">Confirm password</label>
+            <input id="register-confirm" name="confirmPassword" type="password" placeholder="Enter your password again" autocomplete="new-password" required>
+          </div>
+          <button class="button button--full" type="submit">Create account</button>
+        </form>
+        <p class="auth-footer">Already have an account? <a href="01-get-started.html">Sign in</a></p>
+      </section>
+      <p class="auth-note">Your details stay in this browser in this front-end demo.</p>
+    </div>
+  </main>
+  <script src="auth.js"></script>
+</body>
+</html>
